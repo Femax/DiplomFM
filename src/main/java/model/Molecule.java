@@ -25,8 +25,8 @@ public class Molecule {
     }
 
     public void calculateStepTime() {
-        if(time==null) System.out.println("Time is null");
-        else this.stepTime = StringUtils.secondsToDate(StringUtils.stringTineToSeconds(time)/4);
+        if(time==null) System.out.println("Time or StepCount  is null");
+        else this.stepTime = StringUtils.secondsToDate(StringUtils.stringTineToSeconds(time)/stepCount);
     }
 
 

@@ -18,28 +18,28 @@ public class StringUtils {
         int hours = 0;
         int minutes = 0;
         int seconds = 0;
-        Pattern pattern = Pattern.compile("([1-9]*)( )(days)");
+        Pattern pattern = Pattern.compile("([1-9]*)( )(days)(.*)");
         Matcher matcher = pattern.matcher(timeInString);
         if (matcher.matches()) {
             days = Integer.parseInt(matcher.group(1));
         }
 
-        pattern = Pattern.compile("([1-9]*)( )(hours)");
-        matcher = pattern.matcher(timeInString);
-        if (matcher.matches()) {
-            hours = Integer.parseInt(matcher.group(1));
+        Pattern pattern1 = Pattern.compile("([1-9]*)( )(hours)(.*)");
+        Matcher matcher1 = pattern1.matcher(timeInString);
+        if (matcher1.find()) {
+            hours = Integer.parseInt(matcher1.group(1));
         }
 
-        pattern = Pattern.compile("([1-9]*)( )(minutes)");
-        matcher = pattern.matcher(timeInString);
-        if (matcher.matches()) {
-            minutes = Integer.parseInt(matcher.group(1));
+        pattern1 = Pattern.compile("([1-9]*)( )(minutes)(.*)");
+        matcher1 = pattern1.matcher(timeInString);
+        if (matcher1.find()) {
+            minutes = Integer.parseInt(matcher1.group(1));
         }
 
-        pattern = Pattern.compile("([1-9]*)( )(seconds)");
-        matcher = pattern.matcher(timeInString);
-        if (matcher.matches()) {
-            seconds = (int) (Double.parseDouble(matcher.group(1)));
+        pattern1 = Pattern.compile("([1-9]*)( )(seconds)(.*).");
+        matcher1 = pattern1.matcher(timeInString);
+        if (matcher1.find()) {
+            seconds = (int) (Double.parseDouble(matcher1.group(1)));
         }
         seconds = seconds + minutes * 60 + hours * 60 * 60 + days * 24 * 60 * 60;
         return seconds;
