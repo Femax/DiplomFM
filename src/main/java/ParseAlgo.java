@@ -55,6 +55,7 @@ public class ParseAlgo {
 
             }
             molecule.setServer(server);
+            molecule.calculateStepTime();
             System.out.println(molecule);
 
         } catch (FileNotFoundException e) {

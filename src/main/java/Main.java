@@ -1,3 +1,5 @@
+import util.StringUtils;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -10,7 +12,7 @@ public class Main {
     public static void main (String args[]){
         String pathToFolder = "c:\\dev\\Parse\\src\\main\\resources\\";
         final File folder = new File(pathToFolder);
-
+        StringUtils.secondsToDate(123444);
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isDirectory()) {
             } else {
