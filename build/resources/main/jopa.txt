@@ -1,4 +1,0 @@
- %mem=950MW
- %nproc=8
- Job cpu time:       5 days 18 hours 36 minutes 37.7 seconds.
- Number of steps in this run=      2 

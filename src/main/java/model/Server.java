@@ -5,7 +5,7 @@ package model;
  */
 public class Server {
     private String name;
-    private byte procCount;
+    private Byte procCount;
     private int memory;
 
     public Server(String name, byte procCount, int memory) {
@@ -21,7 +21,7 @@ public class Server {
         return name;
     }
 
-    public byte getProcCount() {
+    public Byte getProcCount() {
         return procCount;
     }
 

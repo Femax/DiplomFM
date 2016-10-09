@@ -2,40 +2,61 @@ package model;
 
 import util.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by max on 24.09.2016.
  */
 public class Molecule {
-    private String moleculeName;
+    private String fileName;
     private Server server;
-    private String time;
+    private int time;
     private int stepCount;
-    private String stepTime;
+    private int stepTime;
+    private String moleculeName;
+    private List<String> structure = new ArrayList<>();
 
     public Molecule() {
     }
-    public Molecule(String moleculeName, Server server, String time, int stepCount) {
-        this.moleculeName = moleculeName;
+
+    public Molecule(String fileName, Server server, int time, int stepCount) {
+        this.fileName = fileName;
         this.server = server;
         this.time = time;
         this.stepCount = stepCount;
     }
-    public String getStepTime() {
+
+    public int getStepTime() {
         return stepTime;
     }
 
-    public void calculateStepTime() {
-        if(time==null) System.out.println("Time or StepCount  is null");
-        else this.stepTime = StringUtils.secondsToDate(StringUtils.stringTineToSeconds(time)/stepCount);
+    public void calculateData() {
+        if (time == 0) System.out.println("Time is 0");
+        else if (stepCount==0) {
+            System.out.println("StepCount = 0 ");
+        } else {
+            this.time = (int)time*server.getProcCount();
+            this.stepTime = time/ stepCount;
+        }
+        if(structure.size()>0){
+            StringBuilder sb = new StringBuilder();
+            for(String i:structure){
+//                if(sb.length()>=1) sb.append("-");
+                sb.append(i);
+
+            }
+            moleculeName = sb.toString();
+        }else moleculeName = "unknown";
     }
 
 
-    public String getMoleculeName() {
-        return moleculeName;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setMoleculeName(String moleculeName) {
-        this.moleculeName = moleculeName;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public Server getServer() {
@@ -46,12 +67,12 @@ public class Molecule {
         this.server = server;
     }
 
-    public String getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void increaseTime(int timeValue) {
+        this.time =time + timeValue;
     }
 
     public int getStepCount() {
@@ -61,15 +82,34 @@ public class Molecule {
     public void setStepCount(int stepCount) {
         this.stepCount = stepCount;
     }
+    public void increaseStepCount(){
+        this.stepCount = stepCount++;
+    }
 
     @Override
     public String toString() {
         return "Molecule{" +
-                "moleculeName='" + moleculeName + '\'' +
+                "fileName='" + fileName + '\'' +
                 ", server=" + server +
-                ", time='" + time + '\'' +
+                ", time=" + StringUtils.secondsToDate(time) +
                 ", stepCount=" + stepCount +
-                ", stepTime='" + stepTime + '\'' +
+                ", stepTime=" + StringUtils.secondsToDate(stepTime) +
+                ", structure=" + structure +
                 '}';
+    }
+
+    public List<String> getStructure() {
+        return structure;
+    }
+    public void addAtomToStructure(String atom){
+        structure.add(atom);
+    }
+
+    public String getMoleculeName() {
+        return moleculeName;
+    }
+
+    public void setMoleculeName(String moleculeName) {
+        this.moleculeName = moleculeName;
     }
 }
