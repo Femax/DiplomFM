@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String args[]) {
         Map<String, List<Molecule>> data = new HashMap<>();
-        String pathToFolder = "c:\\dev\\Parse\\src\\main\\resources\\";
+        String pathToFolder = args[0];
         final File folder = new File(pathToFolder);
         // StringUtils.secondsToDate(123444);
         for (final File fileEntry : folder.listFiles()) {

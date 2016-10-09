@@ -94,7 +94,7 @@ public class StringUtils {
             case 43: return "Tc";
             case 44: return "Ru";
             case 45: return "Rh";
-            default:return ""+s;
+            default:return number;
         }
     }
 

@@ -72,7 +72,6 @@ public class ParseAlgo {
             }
             molecule.setServer(server);
             molecule.calculateData();
-            System.out.println(molecule);
         return  molecule;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
