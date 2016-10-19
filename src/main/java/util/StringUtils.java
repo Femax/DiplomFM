@@ -37,7 +37,7 @@ public class StringUtils {
             minutes = Integer.parseInt(matcher.group(1));
         }
 
-        pattern = Pattern.compile("([0-9]*)( )(seconds)(.*).");
+        pattern = Pattern.compile("([0-9]*)([.]*)([0-9]*)( )(seconds)(.*)");
         matcher = pattern.matcher(timeInString);
         if (matcher.find()) {
             seconds = (int) (Double.parseDouble(matcher.group(1)));

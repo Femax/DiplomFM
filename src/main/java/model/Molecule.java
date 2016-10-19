@@ -12,19 +12,13 @@ public class Molecule {
     private String fileName;
     private Server server;
     private int time;
+    private int countOfErrors;
     private int stepCount;
     private int stepTime;
     private String moleculeName;
     private List<String> structure = new ArrayList<>();
 
     public Molecule() {
-    }
-
-    public Molecule(String fileName, Server server, int time, int stepCount) {
-        this.fileName = fileName;
-        this.server = server;
-        this.time = time;
-        this.stepCount = stepCount;
     }
 
     public int getStepTime() {
@@ -67,12 +61,15 @@ public class Molecule {
         this.server = server;
     }
 
-    public long getTime() {
+    public int getTime() {
         return time;
     }
 
     public void increaseTime(int timeValue) {
         this.time =time + timeValue;
+    }
+    public void increaseStepTime(int stepTime){
+        this.stepTime += stepTime;
     }
 
     public int getStepCount() {

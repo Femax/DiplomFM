@@ -12,12 +12,13 @@ import java.util.regex.Pattern;
  * Created by max on 24.09.2016.
  */
 public class ParseAlgo {
+
     public static Molecule recognize(File fileEntry) {
         try {
             boolean isStringHasStructure = false;
             Scanner scanner = new Scanner(fileEntry);
             Molecule molecule = new Molecule();
-            molecule.setFileName(fileEntry.getName());
+            molecule.setFileName(getFileNameWithoutFormat(fileEntry.getName()));
             Server server = new Server();
             while (scanner.hasNextLine()) {
                 String str = scanner.nextLine();
@@ -65,7 +66,7 @@ public class ParseAlgo {
                     } else {
 
                     }
-                } else if (isStringHasStructure && !str.matches("( ?)(Grad*)(.*)")&& !str.equals("") && str.matches("( ?)([A-Z]+)(.*)")) {
+                } else if (isStringHasStructure && !str.matches("( ?)(Grad*)(.*)") && !str.equals("") && str.matches("( ?)([A-Z]+)(.*)")) {
                     Pattern pattern = Pattern.compile("( ?)([A-Z]*)(.*)");
                     Matcher matcher = pattern.matcher(str);
                     if (matcher.find()) {
@@ -73,8 +74,7 @@ public class ParseAlgo {
                     } else {
 
                     }
-                }
-                else if (isStringHasStructure && str.matches("( ?)(Grad*)(.*)")) {
+                } else if (isStringHasStructure && str.matches("( ?)(Grad*)(.*)")) {
                     isStringHasStructure = false;
                 }
 
@@ -88,4 +88,7 @@ public class ParseAlgo {
         return null;
     }
 
+    public static String getFileNameWithoutFormat(String filename) {
+        return filename.substring(0,filename.indexOf("."));
+    }
 }
