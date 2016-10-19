@@ -57,7 +57,7 @@ public class ParseAlgo {
                     }
                 } else if (str.matches("(.*)(Charge =)( *)([0-9]*)( )(Multiplicity =)( *)([0-9]*)(.*)")) {
                     isStringHasStructure = true;
-                } else if (isStringHasStructure && str.matches("( ?)([0-9]+)(.*)")) {
+                } else if (isStringHasStructure && !str.equals("") && str.matches("( ?)([0-9]+)(.*)")) {
                     Pattern pattern = Pattern.compile("( ?)([0-9]*)(.*)");
                     Matcher matcher = pattern.matcher(str);
                     if (matcher.find()) {
@@ -65,14 +65,23 @@ public class ParseAlgo {
                     } else {
 
                     }
-                } else if(isStringHasStructure && str.matches("( ?)(Grad*)(.*)")){
+                } else if (isStringHasStructure && !str.matches("( ?)(Grad*)(.*)")&& !str.equals("") && str.matches("( ?)([A-Z]+)(.*)")) {
+                    Pattern pattern = Pattern.compile("( ?)([A-Z]*)(.*)");
+                    Matcher matcher = pattern.matcher(str);
+                    if (matcher.find()) {
+                        molecule.addAtomToStructure(matcher.group(2));
+                    } else {
+
+                    }
+                }
+                else if (isStringHasStructure && str.matches("( ?)(Grad*)(.*)")) {
                     isStringHasStructure = false;
                 }
 
             }
             molecule.setServer(server);
             molecule.calculateData();
-        return  molecule;
+            return molecule;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
