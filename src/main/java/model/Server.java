@@ -49,4 +49,25 @@ public class Server {
                 ", memory=" + memory +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Server server = (Server) o;
+
+        if (memory != server.memory) return false;
+        if (name != null ? !name.equals(server.name) : server.name != null) return false;
+        return procCount != null ? procCount.equals(server.procCount) : server.procCount == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (procCount != null ? procCount.hashCode() : 0);
+        result = 31 * result + memory;
+        return result;
+    }
 }

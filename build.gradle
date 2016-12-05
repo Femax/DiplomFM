@@ -21,4 +21,5 @@ task fatJar(type: Jar) {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.poi', name: 'poi', version: '3.12'
 }

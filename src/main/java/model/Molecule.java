@@ -109,4 +109,36 @@ public class Molecule {
     public void setMoleculeName(String moleculeName) {
         this.moleculeName = moleculeName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Molecule molecule = (Molecule) o;
+
+        if (time != molecule.time) return false;
+        if (countOfErrors != molecule.countOfErrors) return false;
+        if (stepCount != molecule.stepCount) return false;
+        if (stepTime != molecule.stepTime) return false;
+        if (fileName != null ? !fileName.equals(molecule.fileName) : molecule.fileName != null) return false;
+        if (server != null ? !server.equals(molecule.server) : molecule.server != null) return false;
+        if (moleculeName != null ? !moleculeName.equals(molecule.moleculeName) : molecule.moleculeName != null)
+            return false;
+        return structure != null ? structure.equals(molecule.structure) : molecule.structure == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = fileName != null ? fileName.hashCode() : 0;
+        result = 31 * result + (server != null ? server.hashCode() : 0);
+        result = 31 * result + time;
+        result = 31 * result + countOfErrors;
+        result = 31 * result + stepCount;
+        result = 31 * result + stepTime;
+        result = 31 * result + (moleculeName != null ? moleculeName.hashCode() : 0);
+        result = 31 * result + (structure != null ? structure.hashCode() : 0);
+        return result;
+    }
 }

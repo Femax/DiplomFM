@@ -1,3 +1,4 @@
+import excelapi.ExcelService;
 import model.Molecule;
 import util.StringUtils;
 
@@ -51,7 +52,7 @@ public class Main {
 
             }
         }
-        outPutToOneFile(data);
+        outPutToExcelFile(data);
     }
 
     public static void outPutToManyFiles(Map<String, List<Molecule>> data) {
@@ -84,7 +85,7 @@ public class Main {
                 writer.append('\n');
                 int j = 0;
                 for (Map.Entry<String, Molecule> molecule : i.getValue().entrySet()) {
-                    if(molecule.getValue().getTime()!=0) {
+                    if (molecule.getValue().getTime() != 0) {
                         writer.write("" + j + " " + molecule.getValue().getTime());
                         writer.append('\n');
                         j++;
@@ -95,6 +96,16 @@ public class Main {
 
             System.out.println(ex.getMessage());
         }
+
+    }
+
+    public static void outPutToExcelFile(Map<String, TreeMap<String, Molecule>> data) {
+        System.out.print(data);
+
+        File file = new File("result.xls");
+
+        int i = 0;
+        ExcelService.writeIntoExcelFile(data,file);
 
     }
 }
