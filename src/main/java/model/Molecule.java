@@ -4,6 +4,8 @@ import util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by max on 24.09.2016.
@@ -25,23 +27,27 @@ public class Molecule {
         return stepTime;
     }
 
-    public void calculateData() {
+    public void fillData() {
         if (time == 0) System.out.println("Time is 0");
-        else if (stepCount==0) {
+        else if (stepCount == 0) {
             System.out.println("StepCount = 0 ");
         } else {
-            this.time = (int)time*server.getProcCount();
-            this.stepTime = time/ stepCount;
+            this.time = (int) time * server.getProcCount();
+            this.stepTime = time / stepCount;
         }
-        if(structure.size()>0){
-            StringBuilder sb = new StringBuilder();
-            for(String i:structure){
-//                if(sb.length()>=1) sb.append("-");
-                sb.append(i);
+        if (fileName.contains("--")) {
+            moleculeName = fileName.substring(0, fileName.indexOf("--"));
+        } else {
+            Pattern pattern = Pattern.compile("(.*)(-)([A-Z]*)");
+            Matcher matcher = pattern.matcher(fileName);
+            if(matcher.find()){
+                moleculeName = matcher.group(1);
+            }
+            else {
+                System.out.println("Problems with molecule name at file"+fileName);
 
             }
-            moleculeName = sb.toString();
-        }else moleculeName = "unknown";
+        }
     }
 
 
@@ -66,9 +72,10 @@ public class Molecule {
     }
 
     public void increaseTime(int timeValue) {
-        this.time =time + timeValue;
+        this.time = time + timeValue;
     }
-    public void increaseStepTime(int stepTime){
+
+    public void increaseStepTime(int stepTime) {
         this.stepTime += stepTime;
     }
 
@@ -79,7 +86,8 @@ public class Molecule {
     public void setStepCount(int stepCount) {
         this.stepCount = stepCount;
     }
-    public void increaseStepCount(){
+
+    public void increaseStepCount() {
         this.stepCount = stepCount++;
     }
 
@@ -98,7 +106,8 @@ public class Molecule {
     public List<String> getStructure() {
         return structure;
     }
-    public void addAtomToStructure(String atom){
+
+    public void addAtomToStructure(String atom) {
         structure.add(atom);
     }
 

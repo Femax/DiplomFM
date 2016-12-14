@@ -80,7 +80,7 @@ public class ParseAlgo {
 
             }
             molecule.setServer(server);
-            molecule.calculateData();
+            molecule.fillData();
             return molecule;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -89,6 +89,6 @@ public class ParseAlgo {
     }
 
     public static String getFileNameWithoutFormat(String filename) {
-        return filename.substring(0,filename.indexOf("."));
+        return filename.substring(0, filename.indexOf("."));
     }
 }
