@@ -1,3 +1,4 @@
+import com.google.gson.Gson;
 import excelapi.ExcelService;
 import model.Molecule;
 import util.StringUtils;
@@ -25,25 +26,26 @@ public class Main {
                 try {
 
                     Molecule molecule = ParseAlgo.recognize(fileEntry);
+                    String formFactor = molecule.getMoleculeName();
                     if (fileEntry.getName().contains(".cut")) {
-                        if (data.get(molecule.getMoleculeName()) != null) {
-                            if (data.get(molecule.getMoleculeName()).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())) != null) {
-                                data.get(molecule.getMoleculeName()).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseTime(molecule.getTime());
-                                data.get(molecule.getMoleculeName()).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseStepTime(molecule.getStepTime());
+                        if (data.get(formFactor) != null) {
+                            if (data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())) != null) {
+                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseTime(molecule.getTime());
+                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseStepTime(molecule.getStepTime());
                             } else {
-                                data.get(molecule.getMoleculeName()).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
+                                data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
                             }
                         } else {
                             TreeMap<String, Molecule> moleculesList = new TreeMap<>();
                             moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-                            data.put(molecule.getMoleculeName(), moleculesList);
+                            data.put(formFactor, moleculesList);
                         }
-                    } else if (data.get(molecule.getMoleculeName()) != null) {
-                        data.get(molecule.getMoleculeName()).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
+                    } else if (data.get(formFactor) != null) {
+                        data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
                     } else {
                         TreeMap<String, Molecule> moleculesList = new TreeMap<>();
                         moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-                        data.put(molecule.getMoleculeName(), moleculesList);
+                        data.put(formFactor, moleculesList);
                     }
 
                 } catch (Exception e) {
@@ -52,7 +54,21 @@ public class Main {
 
             }
         }
+        try {
+            saveFileInJson(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         outPutToExcelFile(data);
+    }
+
+    private static void saveFileInJson( Map<String, TreeMap<String, Molecule>> data) throws IOException {
+        Gson gson = new Gson();
+
+
+        gson.toJson(data, new FileWriter("./data.json"));
+
+        String jsonInString = gson.toJson(data);
     }
 
     public static void outPutToManyFiles(Map<String, List<Molecule>> data) {

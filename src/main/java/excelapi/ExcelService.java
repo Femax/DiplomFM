@@ -30,7 +30,7 @@ public class ExcelService {
 
 
             Cell name = row.createCell(i);
-            name.setCellValue(task.getValue().firstEntry().getValue().getFileName());
+            name.setCellValue(task.getValue().firstEntry().getValue().getMoleculeName());
             int j = 1;
             for (Map.Entry<String, Molecule> molecule : task.getValue().entrySet()) {
                 if (molecule.getValue().getTime() != 0) {

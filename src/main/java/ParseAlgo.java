@@ -56,7 +56,17 @@ public class ParseAlgo {
                     } else {
 
                     }
-                } else if (str.matches("(.*)(Charge =)( *)([0-9]*)( )(Multiplicity =)( *)([0-9]*)(.*)")) {
+                }
+                else if (str.matches("(.*)(#)( )(.*)( )(opt freq)")){
+                    Pattern pattern = Pattern.compile("(.*)(#)( )(.*)( )(opt freq)");
+                    Matcher matcher = pattern.matcher(str);
+                    if (matcher.find()) {
+                        molecule.setMethod(matcher.group(4));
+                    } else {
+
+                    }
+                }
+                else if (str.matches("(.*)(Charge =)( *)([0-9]*)( )(Multiplicity =)( *)([0-9]*)(.*)")) {
                     isStringHasStructure = true;
                 } else if (isStringHasStructure && !str.equals("") && str.matches("( ?)([0-9]+)(.*)")) {
                     Pattern pattern = Pattern.compile("( ?)([0-9]*)(.*)");
