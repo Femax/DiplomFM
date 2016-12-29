@@ -1,11 +1,13 @@
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.JsonReader;
 import excelapi.ExcelService;
+import model.JsonCollection;
 import model.Molecule;
 import util.StringUtils;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.lang.reflect.Type;
 import java.util.*;
 
 /**
@@ -13,11 +15,18 @@ import java.util.*;
  */
 public class Main {
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         Map<String, TreeMap<String, Molecule>> data = new HashMap<>();
         String pathToFolder = args[0];
+        ArrayList<Molecule> data2 = new ArrayList<>();
         final File folder = new File(pathToFolder);
-        // StringUtils.secondsToDate(123444);
+        StringUtils.secondsToDate(123444);
+        try {
+            data2 = readFromFile();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println(data2);
         for (final File fileEntry : folder.listFiles()) {
             if (fileEntry.isDirectory()) {
             } else {
@@ -54,21 +63,43 @@ public class Main {
 
             }
         }
-        try {
-            saveFileInJson(data);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        saveFileInJson(data);
         outPutToExcelFile(data);
     }
 
-    private static void saveFileInJson( Map<String, TreeMap<String, Molecule>> data) throws IOException {
+    private static void saveFileInJson(Map<String, TreeMap<String, Molecule>> data) {
         Gson gson = new Gson();
+        for (Map.Entry<String, TreeMap<String, Molecule>> task : data.entrySet()) {
 
+            String moleculename = task.getValue().firstEntry().getValue().getMoleculeName();
+            ArrayList<Molecule> list = new ArrayList<>(task.getValue().values());
+            JsonCollection jsonCollection = new JsonCollection();
+            jsonCollection.setMolecules(list);
 
-        gson.toJson(data, new FileWriter("./data.json"));
+            String json = gson.toJson((jsonCollection));
+            try {
+                FileWriter fw = new FileWriter("./output/" + moleculename + ".txt");
+                BufferedWriter out = new BufferedWriter(fw);
+                out.write(json);
+                out.close();
 
-        String jsonInString = gson.toJson(data);
+            } catch (IOException e) {
+                e.printStackTrace();
+
+            }
+
+        }
+    }
+    private static ArrayList<Molecule> readFromFile() throws FileNotFoundException {
+
+        final Type REVIEW_TYPE = new TypeToken<ArrayList<Molecule>>() {
+        }.getType();
+        Gson gson = new Gson();
+        JsonReader reader = new JsonReader(new FileReader("./output/2_W--np2--ME750--MName_pm6"));
+        reader.setLenient(true);
+        ArrayList<Molecule> data = gson.fromJson(reader, REVIEW_TYPE); // contains the whole reviews list
+
+        return data;
     }
 
     public static void outPutToManyFiles(Map<String, List<Molecule>> data) {
@@ -121,7 +152,7 @@ public class Main {
         File file = new File("result.xls");
 
         int i = 0;
-        ExcelService.writeIntoExcelFile(data,file);
+        ExcelService.writeIntoExcelFile(data, file);
 
     }
 }

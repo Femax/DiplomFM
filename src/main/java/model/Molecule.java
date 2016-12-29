@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
  * Created by max on 24.09.2016.
  */
 public class Molecule {
+
     private String fileName;
     private Server server;
     private String method;
@@ -28,7 +29,8 @@ public class Molecule {
     public int getStepTime() {
         return stepTime;
     }
-
+    //SortName
+    //TODO
     public void fillData() {
         if (time == 0) System.out.println("Time is 0");
         else if (stepCount == 0) {
@@ -39,7 +41,10 @@ public class Molecule {
         }
         if (fileName.contains("--")) {
             moleculeName = fileName.substring(0, fileName.indexOf("--"));
-            formFactor = "--np" + this.server.getProcCount()+"--ME"+this.server.getMemory()+"--MName_"+this.method;
+            if(this.method.contains("/")){
+                this.method=method.substring(0, method.indexOf("/"));
+            }
+             formFactor = "--np" + this.server.getProcCount()+"--ME"+this.server.getMemory()+"--MName_"+this.method;
             moleculeName= moleculeName +  formFactor;
         } else {
             Pattern pattern = Pattern.compile("(.*)(-)([A-Z]*)");
@@ -172,6 +177,18 @@ public class Molecule {
         result = 31 * result + (moleculeName != null ? moleculeName.hashCode() : 0);
         result = 31 * result + (structure != null ? structure.hashCode() : 0);
         return result;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
+    public void setStepTime(int stepTime) {
+        this.stepTime = stepTime;
+    }
+
+    public void setStructure(List<String> structure) {
+        this.structure = structure;
     }
 
     public String getFormFactor() {

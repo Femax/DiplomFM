@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * Created by max on 24.09.2016.
  */
 public class ParseAlgo {
-
+    //TODO
     public static Molecule recognize(File fileEntry) {
         try {
             boolean isStringHasStructure = false;
