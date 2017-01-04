@@ -1,0 +1,1 @@
+{"molecules":[{"fileName":"1_S-1_NH3-1_HSO4--AminusPM6","server":{"procCount":8,"memory":750},"method":"pm6","time":536,"error":false,"stepCount":10,"stepTime":53,"moleculeName":"1_S-1_NH3-1_HSO4--np8--ME750--MName_pm6","structure":[],"formFactor":"--np8--ME750--MName_pm6"}]}

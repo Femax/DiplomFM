@@ -1,0 +1,1 @@
+{"molecules":[{"fileName":"4_S-4_NH3-0_W--A6311","server":{"procCount":8,"memory":0},"method":"pw91pw91","time":3726552,"error":false,"stepCount":0,"stepTime":77636,"moleculeName":"4_S-4_NH3-0_W--np8--ME0--MName_pw91pw91","structure":[],"formFactor":"--np8--ME0--MName_pw91pw91"}]}

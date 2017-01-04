@@ -1,0 +1,1 @@
+{"molecules":[{"fileName":"1_S-1_NH3-1_HSO4--Bminus6311","server":{"procCount":8,"memory":750},"method":"pw91pw91","time":281808,"error":false,"stepCount":32,"stepTime":8806,"moleculeName":"1_S-1_NH3-1_HSO4--np8--ME750--MName_pw91pw91","structure":[],"formFactor":"--np8--ME750--MName_pw91pw91"}]}

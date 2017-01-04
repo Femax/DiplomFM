@@ -1,0 +1,1 @@
+{"molecules":[{"fileName":"1_S-1_DMAH-0_NH3-0W--A6311","server":{"procCount":8,"memory":0},"method":"pw91pw91","time":580424,"error":false,"stepCount":86,"stepTime":6749,"moleculeName":"1_S-1_DMAH-0_NH3-0W--np8--ME0--MName_pw91pw91","structure":["C","N","H","H","H","C","H","H","H","H","S","O","O","O","H","O","H","H","A"],"formFactor":"--np8--ME0--MName_pw91pw91"}]}

@@ -1,0 +1,1 @@
+{"molecules":[{"fileName":"3_S-1_DMA-0_NH3-1_HSO4-0W--H6311","server":{"procCount":8,"memory":0},"method":"pw91pw91","time":7916616,"error":false,"stepCount":0,"stepTime":51074,"moleculeName":"3_S-1_DMA-0_NH3-1_HSO4-0W--np8--ME0--MName_pw91pw91","structure":[],"formFactor":"--np8--ME0--MName_pw91pw91"}]}

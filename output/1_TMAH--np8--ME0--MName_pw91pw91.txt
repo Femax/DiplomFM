@@ -1,0 +1,1 @@
+{"molecules":[{"fileName":"1_TMAH--A6311","server":{"procCount":8,"memory":0},"method":"pw91pw91","time":57504,"error":false,"stepCount":9,"stepTime":6389,"moleculeName":"1_TMAH--np8--ME0--MName_pw91pw91","structure":["N","C","H","H","H","C","H","H","H","C","H","H","H","H","N","C","H","H","H","C","H","H","H","C","H","H","H","H","R"],"formFactor":"--np8--ME0--MName_pw91pw91"}]}

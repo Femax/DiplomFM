@@ -18,7 +18,7 @@ public class Main {
     public static void main(String args[]) throws IOException {
         Map<String, TreeMap<String, Molecule>> data = new HashMap<>();
         String pathToFolder = args[0];
-        ArrayList<Molecule> data2 = new ArrayList<>();
+        HashMap<String,JsonCollection> data2 = new HashMap<>();
         final File folder = new File(pathToFolder);
         StringUtils.secondsToDate(123444);
         try {
@@ -27,44 +27,10 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println(data2);
-        for (final File fileEntry : folder.listFiles()) {
-            if (fileEntry.isDirectory()) {
-            } else {
-                System.out.println(fileEntry.getName());
-
-                try {
-
-                    Molecule molecule = ParseAlgo.recognize(fileEntry);
-                    String formFactor = molecule.getMoleculeName();
-                    if (fileEntry.getName().contains(".cut")) {
-                        if (data.get(formFactor) != null) {
-                            if (data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())) != null) {
-                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseTime(molecule.getTime());
-                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseStepTime(molecule.getStepTime());
-                            } else {
-                                data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-                            }
-                        } else {
-                            TreeMap<String, Molecule> moleculesList = new TreeMap<>();
-                            moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-                            data.put(formFactor, moleculesList);
-                        }
-                    } else if (data.get(formFactor) != null) {
-                        data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-                    } else {
-                        TreeMap<String, Molecule> moleculesList = new TreeMap<>();
-                        moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-                        data.put(formFactor, moleculesList);
-                    }
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-            }
-        }
-        saveFileInJson(data);
-        outPutToExcelFile(data);
+//     There ParseALgo
+//      saveFileInJson(data);
+        File file = new File("resultFromJson.xls");
+        ExcelService.writeIntoExcelFileFromJson(data2,file);
     }
 
     private static void saveFileInJson(Map<String, TreeMap<String, Molecule>> data) {
@@ -90,15 +56,18 @@ public class Main {
 
         }
     }
-    private static ArrayList<Molecule> readFromFile() throws FileNotFoundException {
-
-        final Type REVIEW_TYPE = new TypeToken<ArrayList<Molecule>>() {
-        }.getType();
-        Gson gson = new Gson();
-        JsonReader reader = new JsonReader(new FileReader("./output/2_W--np2--ME750--MName_pm6"));
-        reader.setLenient(true);
-        ArrayList<Molecule> data = gson.fromJson(reader, REVIEW_TYPE); // contains the whole reviews list
-
+    private static HashMap<String,JsonCollection> readFromFile() throws FileNotFoundException {
+        final File folder = new File("./output");
+        HashMap<String,JsonCollection> data = new HashMap<>();
+        for (final File fileEntry : folder.listFiles()) {
+//            final Type REVIEW_TYPE = new TypeToken<ArrayList<Molecule>>() {
+//            }.getType();
+            Gson gson = new Gson();
+            JsonReader reader = new JsonReader(new FileReader(fileEntry));
+            reader.setLenient(true);
+            System.out.println(fileEntry.getName());
+            data.put(fileEntry.getName(),gson.fromJson(reader, JsonCollection.class)); // contains the whole reviews list
+        }
         return data;
     }
 
@@ -155,4 +124,42 @@ public class Main {
         ExcelService.writeIntoExcelFile(data, file);
 
     }
+
+//ParseAlgo
+//       for (final File fileEntry : folder.listFiles()) {
+//            if (fileEntry.isDirectory()) {
+//            } else {
+//                System.out.println(fileEntry.getName());
+//
+//                try {
+//
+//                    Molecule molecule = ParseAlgo.recognize(fileEntry);
+//                    String formFactor = molecule.getMoleculeName();
+//                    if (fileEntry.getName().contains(".cut")) {
+//                        if (data.get(formFactor) != null) {
+//                            if (data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())) != null) {
+//                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseTime(molecule.getTime());
+//                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseStepTime(molecule.getStepTime());
+//                            } else {
+//                                data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
+//                            }
+//                        } else {
+//                            TreeMap<String, Molecule> moleculesList = new TreeMap<>();
+//                            moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
+//                            data.put(formFactor, moleculesList);
+//                        }
+//                    } else if (data.get(formFactor) != null) {
+//                        data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
+//                    } else {
+//                        TreeMap<String, Molecule> moleculesList = new TreeMap<>();
+//                        moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
+//                        data.put(formFactor, moleculesList);
+//                    }
+//
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//            }
+//        }
 }
