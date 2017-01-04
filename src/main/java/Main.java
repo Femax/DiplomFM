@@ -1,5 +1,4 @@
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import excelapi.ExcelService;
 import model.JsonCollection;
@@ -7,7 +6,6 @@ import model.Molecule;
 import util.StringUtils;
 
 import java.io.*;
-import java.lang.reflect.Type;
 import java.util.*;
 
 /**
@@ -18,19 +16,28 @@ public class Main {
     public static void main(String args[]) throws IOException {
         Map<String, TreeMap<String, Molecule>> data = new HashMap<>();
         String pathToFolder = args[0];
-        HashMap<String,JsonCollection> data2 = new HashMap<>();
+        HashMap<String, JsonCollection> data2 = new HashMap<>();
         final File folder = new File(pathToFolder);
         StringUtils.secondsToDate(123444);
-        try {
-            data2 = readFromFile();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        HashMap<String, JsonCollection> datapw61 = new HashMap<>();
+        HashMap<String, JsonCollection> datapm6 = new HashMap<>();
+        HashMap<String, JsonCollection> data1_S = new HashMap<>();
+        HashMap<String, JsonCollection> data2_S = new HashMap<>();
+        HashMap<String, JsonCollection> data3_S = new HashMap<>();
+        HashMap<String, JsonCollection> data4_S = new HashMap<>();
+        readFromFileForMethods(datapw61, datapm6);
+        readFromFileForS(data1_S);
         System.out.println(data2);
 //     There ParseALgo
 //      saveFileInJson(data);
-        File file = new File("resultFromJson.xls");
-        ExcelService.writeIntoExcelFileFromJson(data2,file);
+
+        File file = new File("resultS.xls");
+
+
+        //  File file5 = new File("resultpm6pw61.xls");
+        ExcelService.writeIntoExcelFileFromJsonByCountS(data1_S, file);
+
+        //   ExcelService.writeIntoExcelFileFromJsonByCountS(datapw61, datapm6, file3);
     }
 
     private static void saveFileInJson(Map<String, TreeMap<String, Molecule>> data) {
@@ -56,9 +63,10 @@ public class Main {
 
         }
     }
-    private static HashMap<String,JsonCollection> readFromFile() throws FileNotFoundException {
+
+    private static void readFromFileForMethods(HashMap<String, JsonCollection> datapw91, HashMap<String, JsonCollection> datapm6) throws FileNotFoundException {
         final File folder = new File("./output");
-        HashMap<String,JsonCollection> data = new HashMap<>();
+        HashMap<String, JsonCollection> data = new HashMap<>();
         for (final File fileEntry : folder.listFiles()) {
 //            final Type REVIEW_TYPE = new TypeToken<ArrayList<Molecule>>() {
 //            }.getType();
@@ -66,10 +74,30 @@ public class Main {
             JsonReader reader = new JsonReader(new FileReader(fileEntry));
             reader.setLenient(true);
             System.out.println(fileEntry.getName());
-            data.put(fileEntry.getName(),gson.fromJson(reader, JsonCollection.class)); // contains the whole reviews list
+            if (fileEntry.getName().contains("pw91"))
+                datapw91.put(fileEntry.getName(), gson.fromJson(reader, JsonCollection.class));
+            else
+                datapm6.put(fileEntry.getName(), gson.fromJson(reader, JsonCollection.class));// contains the whole reviews list
         }
-        return data;
+
     }
+
+    private static void readFromFileForS(HashMap<String, JsonCollection> data1_S) throws FileNotFoundException {
+        final File folder = new File("./output");
+        for (final File fileEntry : folder.listFiles()) {
+//            final Type REVIEW_TYPE = new TypeToken<ArrayList<Molecule>>() {
+//            }.getType();
+            Gson gson = new Gson();
+            JsonReader reader = new JsonReader(new FileReader(fileEntry));
+            reader.setLenient(true);
+            System.out.println(fileEntry.getName());
+            data1_S.put(fileEntry.getName(), gson.fromJson(reader, JsonCollection.class));
+
+
+        }
+
+    }
+
 
     public static void outPutToManyFiles(Map<String, List<Molecule>> data) {
         System.out.print(data);

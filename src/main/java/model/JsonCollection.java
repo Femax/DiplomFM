@@ -26,5 +26,17 @@ public class JsonCollection {
             this.molecules.add( h );
         }
 
+        public int getSSTime(){
+            int SS= 0;
+            int count = 0;
+            int sum = 0;
+            for(Molecule molecule: molecules){
+                sum = sum + molecule.getTime();
+                count++;
+            }
+            SS = sum/count;
+            return SS;
+        }
+
 
 }
