@@ -15,9 +15,7 @@ public class Main {
 
     public static void main(String args[]) throws IOException {
         Map<String, TreeMap<String, Molecule>> data = new HashMap<>();
-        String pathToFolder = args[0];
         HashMap<String, JsonCollection> data2 = new HashMap<>();
-        final File folder = new File(pathToFolder);
         StringUtils.secondsToDate(123444);
         HashMap<String, JsonCollection> datapw61 = new HashMap<>();
         HashMap<String, JsonCollection> datapm6 = new HashMap<>();
@@ -153,41 +151,5 @@ public class Main {
 
     }
 
-//ParseAlgo
-//       for (final File fileEntry : folder.listFiles()) {
-//            if (fileEntry.isDirectory()) {
-//            } else {
-//                System.out.println(fileEntry.getName());
-//
-//                try {
-//
-//                    Molecule molecule = ParseAlgo.recognize(fileEntry);
-//                    String formFactor = molecule.getMoleculeName();
-//                    if (fileEntry.getName().contains(".cut")) {
-//                        if (data.get(formFactor) != null) {
-//                            if (data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())) != null) {
-//                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseTime(molecule.getTime());
-//                                data.get(formFactor).get(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName())).increaseStepTime(molecule.getStepTime());
-//                            } else {
-//                                data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-//                            }
-//                        } else {
-//                            TreeMap<String, Molecule> moleculesList = new TreeMap<>();
-//                            moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-//                            data.put(formFactor, moleculesList);
-//                        }
-//                    } else if (data.get(formFactor) != null) {
-//                        data.get(formFactor).put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-//                    } else {
-//                        TreeMap<String, Molecule> moleculesList = new TreeMap<>();
-//                        moleculesList.put(ParseAlgo.getFileNameWithoutFormat(fileEntry.getName()), molecule);
-//                        data.put(formFactor, moleculesList);
-//                    }
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//
-//            }
-//        }
+
 }
