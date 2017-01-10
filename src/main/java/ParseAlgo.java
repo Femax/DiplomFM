@@ -21,7 +21,8 @@ public class ParseAlgo {
             Molecule molecule = new Molecule();
             molecule.setFileName(getFileNameWithoutFormat(fileEntry.getName()));
             Server server = new Server();
-            server.setName(file.getName());
+            server.setName(getServerName(file.getName()));
+            server.setDate(getDate(file.getName()));
             while (scanner.hasNextLine()) {
                 String str = scanner.nextLine();
                 if (str.contains(" 16                    2.32214   3.60726   1.03062 ")) {
@@ -100,6 +101,17 @@ public class ParseAlgo {
         return null;
     }
 
+    private static String getDate(String name) {
+        Pattern pattern = Pattern.compile("(node)([1-9]*)(l)(.*)(.tar.*)");
+        Matcher matcher = pattern.matcher(name);
+        if (matcher.matches()) {
+            String out = matcher.group(4);
+            return out;
+        } else {
+            return name;
+        }
+    }
+
 
     public static Molecule recognizeTar(TarArchiveEntry tarArchiveEntry, File file,TarArchiveInputStream tarArchiveInputStream) {
         try {
@@ -108,7 +120,8 @@ public class ParseAlgo {
             Molecule molecule = new Molecule();
             molecule.setFileName(getFileNameWithoutFormat(tarArchiveEntry.getName()));
             Server server = new Server();
-            server.setName(file.getName());
+            server.setName(getServerName(file.getName()));
+            server.setDate(getDate(file.getName()));
             BufferedReader br = new BufferedReader(new InputStreamReader(tarArchiveInputStream));
             String str;
             while ((str= br.readLine()) != null) {
@@ -189,6 +202,18 @@ public class ParseAlgo {
             e.printStackTrace();
         }
         return null;
+    }
+
+    private static String getServerName(String name) {
+        Pattern pattern = Pattern.compile("(node)([1-9]*)(l)(.*)(.tar.*)");
+        Matcher matcher = pattern.matcher(name);
+        if (matcher.matches()) {
+            String out = matcher.group(1)+matcher.group(2);
+            return out;
+        } else {
+            return name;
+        }
+
     }
 
     public static String getFileNameWithoutFormat(String filename) {

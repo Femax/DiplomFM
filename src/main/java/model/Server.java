@@ -6,6 +6,7 @@ package model;
 public class Server {
     private String name;
     private Byte procCount;
+    private String date;
     private int memory;
 
     public Server(String name, byte procCount, int memory) {
@@ -69,5 +70,13 @@ public class Server {
         result = 31 * result + (procCount != null ? procCount.hashCode() : 0);
         result = 31 * result + memory;
         return result;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
