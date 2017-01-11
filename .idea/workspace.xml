@@ -2,8 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d910ea-f252-4e5a-ab8e-268d38d141e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ParseAlgo.java" afterPath="$PROJECT_DIR$/src/main/java/ParseAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" afterPath="$PROJECT_DIR$/src/main/java/model/Server.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ParseAlgo.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ParseFile.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/ParseFile.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/excelapi/ExcelService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/JsonCollection.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/model/JsonCollection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/Molecule.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/model/Molecule.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/Server.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/model/Server.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/util/StringUtils.java" afterPath="$PROJECT_DIR$/src/main/java/fedosov/util/StringUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/Parse-all-1-test.jar" afterPath="$PROJECT_DIR$/build/libs/Parse-all-1-test.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/4_S-4_NH3-0_W--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/4_S-4_NH3-0_W--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/4_S-5_NH3-0_W--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/4_S-5_NH3-0_W--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/5_S-5_NH3-0_W--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/5_S-5_NH3-0_W--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/5_S-6_NH3-0_W--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/5_S-6_NH3-0_W--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/6_S-1_NH3-0_W--np8--ME750--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/6_S-1_NH3-0_W--np8--ME750--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/6_S-3_NH3-0W8.txt" afterPath="$PROJECT_DIR$/output/6_S-3_NH3-0W8.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/6_S-4_NH3--np8--ME750--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/6_S-4_NH3--np8--ME750--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/6_S-6_NH3--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/6_S-6_NH3--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/6_S-7_NH3-0_W--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/6_S-7_NH3-0_W--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/7_S-2_NH3--np8--ME950--MName_pw91pw91.txt" afterPath="$PROJECT_DIR$/output/7_S-2_NH3--np8--ME950--MName_pw91pw91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/fatJar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/fatJar/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hs_err_pid17130.log" afterPath="$PROJECT_DIR$/hs_err_pid17130.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hs_err_pid19748.log" afterPath="$PROJECT_DIR$/hs_err_pid19748.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Parse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,6 +96,20 @@
                 <option name="myItemId" value="Tasks" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
               </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Parse" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
               <PATH_ELEMENT>
                 <option name="myItemId" value="other" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
@@ -84,93 +126,110 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Molecule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Molecule.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Molecule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="181" column="35" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#590#591#0" expanded="false" />
-                <element signature="e#621#622#0" expanded="false" />
-                <element signature="e#1835#1836#0" expanded="false" />
-                <element signature="e#1866#1867#0" expanded="false" />
-                <element signature="e#1914#1915#0" expanded="false" />
-                <element signature="e#1954#1955#0" expanded="false" />
-                <element signature="e#1987#1988#0" expanded="false" />
-                <element signature="e#2016#2017#0" expanded="false" />
-                <element signature="e#2060#2061#0" expanded="false" />
-                <element signature="e#2096#2097#0" expanded="false" />
-                <element signature="e#2124#2125#0" expanded="false" />
-                <element signature="e#2151#2152#0" expanded="false" />
-                <element signature="e#2198#2199#0" expanded="false" />
-                <element signature="e#2242#2243#0" expanded="false" />
-                <element signature="e#2292#2293#0" expanded="false" />
-                <element signature="e#2333#2334#0" expanded="false" />
-                <element signature="e#2366#2367#0" expanded="false" />
-                <element signature="e#2398#2399#0" expanded="false" />
-                <element signature="e#2445#2446#0" expanded="false" />
-                <element signature="e#2487#2488#0" expanded="false" />
-                <element signature="e#2526#2527#0" expanded="false" />
-                <element signature="e#2570#2571#0" expanded="false" />
-                <element signature="e#2603#2604#0" expanded="false" />
-                <element signature="e#2632#2633#0" expanded="false" />
-                <element signature="e#2676#2677#0" expanded="false" />
-                <element signature="e#2712#2713#0" expanded="false" />
-                <element signature="e#2744#2745#0" expanded="false" />
-                <element signature="e#2772#2773#0" expanded="false" />
-                <element signature="e#2815#2816#0" expanded="false" />
-                <element signature="e#2849#2850#0" expanded="false" />
-                <element signature="e#3303#3304#0" expanded="false" />
-                <element signature="e#3335#3336#0" expanded="false" />
-                <element signature="e#3386#3387#0" expanded="false" />
-                <element signature="e#3421#3422#0" expanded="false" />
-                <element signature="e#3460#3461#0" expanded="false" />
-                <element signature="e#3495#3496#0" expanded="false" />
-                <element signature="e#3551#3552#0" expanded="false" />
-                <element signature="e#3599#3600#0" expanded="false" />
-                <element signature="e#5305#5306#0" expanded="false" />
-                <element signature="e#5345#5346#0" expanded="false" />
-                <element signature="e#5401#5402#0" expanded="false" />
-                <element signature="e#5443#5444#0" expanded="false" />
-                <element signature="e#5480#5481#0" expanded="false" />
-                <element signature="e#5513#5514#0" expanded="false" />
-                <element signature="e#5565#5566#0" expanded="false" />
-                <element signature="e#5609#5610#0" expanded="false" />
+                <element signature="e#606#607#0" expanded="false" />
+                <element signature="e#637#638#0" expanded="false" />
+                <element signature="e#1851#1852#0" expanded="false" />
+                <element signature="e#1882#1883#0" expanded="false" />
+                <element signature="e#1930#1931#0" expanded="false" />
+                <element signature="e#1970#1971#0" expanded="false" />
+                <element signature="e#2003#2004#0" expanded="false" />
+                <element signature="e#2032#2033#0" expanded="false" />
+                <element signature="e#2076#2077#0" expanded="false" />
+                <element signature="e#2112#2113#0" expanded="false" />
+                <element signature="e#2140#2141#0" expanded="false" />
+                <element signature="e#2167#2168#0" expanded="false" />
+                <element signature="e#2214#2215#0" expanded="false" />
+                <element signature="e#2258#2259#0" expanded="false" />
+                <element signature="e#2308#2309#0" expanded="false" />
+                <element signature="e#2349#2350#0" expanded="false" />
+                <element signature="e#2382#2383#0" expanded="false" />
+                <element signature="e#2414#2415#0" expanded="false" />
+                <element signature="e#2461#2462#0" expanded="false" />
+                <element signature="e#2503#2504#0" expanded="false" />
+                <element signature="e#2542#2543#0" expanded="false" />
+                <element signature="e#2586#2587#0" expanded="false" />
+                <element signature="e#2619#2620#0" expanded="false" />
+                <element signature="e#2648#2649#0" expanded="false" />
+                <element signature="e#2692#2693#0" expanded="false" />
+                <element signature="e#2728#2729#0" expanded="false" />
+                <element signature="e#2760#2761#0" expanded="false" />
+                <element signature="e#2788#2789#0" expanded="false" />
+                <element signature="e#2831#2832#0" expanded="false" />
+                <element signature="e#2865#2866#0" expanded="false" />
+                <element signature="e#3319#3320#0" expanded="false" />
+                <element signature="e#3351#3352#0" expanded="false" />
+                <element signature="e#3402#3403#0" expanded="false" />
+                <element signature="e#3437#3438#0" expanded="false" />
+                <element signature="e#3476#3477#0" expanded="false" />
+                <element signature="e#3511#3512#0" expanded="false" />
+                <element signature="e#3567#3568#0" expanded="false" />
+                <element signature="e#3615#3616#0" expanded="false" />
+                <element signature="e#5321#5322#0" expanded="false" />
+                <element signature="e#5361#5362#0" expanded="false" />
+                <element signature="e#5417#5418#0" expanded="false" />
+                <element signature="e#5459#5460#0" expanded="false" />
+                <element signature="e#5496#5497#0" expanded="false" />
+                <element signature="e#5529#5530#0" expanded="false" />
+                <element signature="e#5581#5582#0" expanded="false" />
+                <element signature="e#5625#5626#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Server.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Server.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#1760#1761#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1832#1833#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="false" />
+                <element signature="e#434#435#0" expanded="false" />
+                <element signature="e#468#469#0" expanded="false" />
+                <element signature="e#500#501#0" expanded="false" />
+                <element signature="e#530#531#0" expanded="false" />
+                <element signature="e#559#560#0" expanded="false" />
+                <element signature="e#599#600#0" expanded="false" />
+                <element signature="e#631#632#0" expanded="false" />
+                <element signature="e#679#680#0" expanded="false" />
+                <element signature="e#721#722#0" expanded="false" />
+                <element signature="e#762#763#0" expanded="false" />
+                <element signature="e#798#799#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="JsonCollection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/JsonCollection.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/JsonCollection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-              <folding />
+              <folding>
+                <element signature="e#200#201#0" expanded="false" />
+                <element signature="e#266#267#0" expanded="false" />
+                <element signature="e#329#330#0" expanded="false" />
+                <element signature="e#374#375#0" expanded="false" />
+                <element signature="e#427#428#0" expanded="false" />
+                <element signature="e#472#473#0" expanded="false" />
+                <element signature="e#518#519#0" expanded="false" />
+                <element signature="e#565#566#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,11 +237,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParseFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ParseFile.java">
+      <file leaf-file-name="ParseFile.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39728352">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,26 +263,26 @@
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ExcelService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/excelapi/ExcelService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParseAlgo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ParseAlgo.java">
+      <file leaf-file-name="ParseAlgo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3321033">
+            <state vertical-scroll-proportion="0.0">
               <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding />
             </state>
@@ -231,10 +290,10 @@
         </entry>
       </file>
       <file leaf-file-name="StringUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/util/StringUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -366,7 +425,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2968154230354" />
+        <entry key="$PROJECT_DIR$" value="2968162854177" />
         <entry key="C:/CM1416" value="2929550232000" />
       </map>
     </option>
@@ -520,11 +579,14 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Molecule.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/JsonCollection.java" />
         <option value="$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ParseFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/ParseAlgo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fedosov/Main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fedosov/ParseFile.java" />
       </list>
     </option>
   </component>
@@ -664,6 +726,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fedosov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -686,7 +752,7 @@
   <component name="RunManager" selected="Application.ParseFile">
     <configuration default="false" name="ParseFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ParseFile" />
+      <option name="MAIN_CLASS_NAME" value="fedosov.ParseFile" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="&quot;$USER_HOME$/Desktop/test/&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -711,6 +777,24 @@
         <option name="taskNames">
           <list>
             <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="DiplomFM [processResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="processResources" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -981,7 +1065,7 @@
     </configuration>
     <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="fedosov.excelapi.Main" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="&quot;C:\Users\femax\IdeaProjects\DiplomFM\src\main\resources&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -994,15 +1078,17 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.ParseFile" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.Parse [fatJar]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.DiplomFM [processResources]" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.ParseFile" />
         <item index="1" class="java.lang.String" itemvalue="Gradle.Parse [fatJar]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.DiplomFM [processResources]" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -1059,12 +1145,12 @@
       <workItem from="1482964249018" duration="4519000" />
       <workItem from="1483526807074" duration="551000" />
       <workItem from="1483527454736" duration="17498000" />
-      <workItem from="1484072605946" duration="10703000" />
+      <workItem from="1484072605946" duration="13750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105509000" />
+    <option name="totallyTimeSpent" value="108556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1086,17 +1172,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20828667" sideWeight="0.502445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3344086" sideWeight="0.49511003" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3344086" sideWeight="0.49511003" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20645161" sideWeight="0.49755502" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26851255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294621" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56796116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.567933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38494623" sideWeight="0.49755502" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38494623" sideWeight="0.49755502" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1109,7 +1196,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1131,55 +1217,61 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>49</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/Main.java</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/Main.java</url>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>57</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/Main.java</url>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java</url>
-          <line>60</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/excelapi/ExcelService.java</url>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java</url>
-          <line>114</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/excelapi/ExcelService.java</url>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/Main.java</url>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ParseFile.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/ParseFile.java</url>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ParseAlgo.java</url>
-          <line>124</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java</url>
+          <line>130</line>
           <properties />
           <option name="timeStamp" value="126" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fedosov/ParseFile.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="127" />
+      <option name="time" value="128" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1188,84 +1280,101 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Molecule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Molecule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="181" column="35" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#590#591#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1866#1867#0" expanded="false" />
-            <element signature="e#1914#1915#0" expanded="false" />
-            <element signature="e#1954#1955#0" expanded="false" />
-            <element signature="e#1987#1988#0" expanded="false" />
-            <element signature="e#2016#2017#0" expanded="false" />
-            <element signature="e#2060#2061#0" expanded="false" />
-            <element signature="e#2096#2097#0" expanded="false" />
-            <element signature="e#2124#2125#0" expanded="false" />
-            <element signature="e#2151#2152#0" expanded="false" />
-            <element signature="e#2198#2199#0" expanded="false" />
-            <element signature="e#2242#2243#0" expanded="false" />
-            <element signature="e#2292#2293#0" expanded="false" />
-            <element signature="e#2333#2334#0" expanded="false" />
-            <element signature="e#2366#2367#0" expanded="false" />
-            <element signature="e#2398#2399#0" expanded="false" />
-            <element signature="e#2445#2446#0" expanded="false" />
-            <element signature="e#2487#2488#0" expanded="false" />
-            <element signature="e#2526#2527#0" expanded="false" />
-            <element signature="e#2570#2571#0" expanded="false" />
-            <element signature="e#2603#2604#0" expanded="false" />
-            <element signature="e#2632#2633#0" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2712#2713#0" expanded="false" />
-            <element signature="e#2744#2745#0" expanded="false" />
-            <element signature="e#2772#2773#0" expanded="false" />
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2849#2850#0" expanded="false" />
-            <element signature="e#3303#3304#0" expanded="false" />
-            <element signature="e#3335#3336#0" expanded="false" />
-            <element signature="e#3386#3387#0" expanded="false" />
-            <element signature="e#3421#3422#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3495#3496#0" expanded="false" />
-            <element signature="e#3551#3552#0" expanded="false" />
-            <element signature="e#3599#3600#0" expanded="false" />
-            <element signature="e#5305#5306#0" expanded="false" />
-            <element signature="e#5345#5346#0" expanded="false" />
-            <element signature="e#5401#5402#0" expanded="false" />
-            <element signature="e#5443#5444#0" expanded="false" />
-            <element signature="e#5480#5481#0" expanded="false" />
-            <element signature="e#5513#5514#0" expanded="false" />
-            <element signature="e#5565#5566#0" expanded="false" />
-            <element signature="e#5609#5610#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#1882#1883#0" expanded="false" />
+            <element signature="e#1930#1931#0" expanded="false" />
+            <element signature="e#1970#1971#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2032#2033#0" expanded="false" />
+            <element signature="e#2076#2077#0" expanded="false" />
+            <element signature="e#2112#2113#0" expanded="false" />
+            <element signature="e#2140#2141#0" expanded="false" />
+            <element signature="e#2167#2168#0" expanded="false" />
+            <element signature="e#2214#2215#0" expanded="false" />
+            <element signature="e#2258#2259#0" expanded="false" />
+            <element signature="e#2308#2309#0" expanded="false" />
+            <element signature="e#2349#2350#0" expanded="false" />
+            <element signature="e#2382#2383#0" expanded="false" />
+            <element signature="e#2414#2415#0" expanded="false" />
+            <element signature="e#2461#2462#0" expanded="false" />
+            <element signature="e#2503#2504#0" expanded="false" />
+            <element signature="e#2542#2543#0" expanded="false" />
+            <element signature="e#2586#2587#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
+            <element signature="e#2648#2649#0" expanded="false" />
+            <element signature="e#2692#2693#0" expanded="false" />
+            <element signature="e#2728#2729#0" expanded="false" />
+            <element signature="e#2760#2761#0" expanded="false" />
+            <element signature="e#2788#2789#0" expanded="false" />
+            <element signature="e#2831#2832#0" expanded="false" />
+            <element signature="e#2865#2866#0" expanded="false" />
+            <element signature="e#3319#3320#0" expanded="false" />
+            <element signature="e#3351#3352#0" expanded="false" />
+            <element signature="e#3402#3403#0" expanded="false" />
+            <element signature="e#3437#3438#0" expanded="false" />
+            <element signature="e#3476#3477#0" expanded="false" />
+            <element signature="e#3511#3512#0" expanded="false" />
+            <element signature="e#3567#3568#0" expanded="false" />
+            <element signature="e#3615#3616#0" expanded="false" />
+            <element signature="e#5321#5322#0" expanded="false" />
+            <element signature="e#5361#5362#0" expanded="false" />
+            <element signature="e#5417#5418#0" expanded="false" />
+            <element signature="e#5459#5460#0" expanded="false" />
+            <element signature="e#5496#5497#0" expanded="false" />
+            <element signature="e#5529#5530#0" expanded="false" />
+            <element signature="e#5581#5582#0" expanded="false" />
+            <element signature="e#5625#5626#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#468#469#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#530#531#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#599#600#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#762#763#0" expanded="false" />
+            <element signature="e#798#799#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/JsonCollection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/JsonCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#200#201#0" expanded="false" />
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
@@ -1283,7 +1392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/excelapi/ExcelService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1291,7 +1400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParseAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
@@ -1299,7 +1408,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/util/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
@@ -1309,14 +1418,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -1326,7 +1435,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/util/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1350,7 +1459,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParseAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
@@ -1365,70 +1474,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Molecule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Molecule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#590#591#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1866#1867#0" expanded="false" />
-            <element signature="e#1914#1915#0" expanded="false" />
-            <element signature="e#1954#1955#0" expanded="false" />
-            <element signature="e#1987#1988#0" expanded="false" />
-            <element signature="e#2016#2017#0" expanded="false" />
-            <element signature="e#2060#2061#0" expanded="false" />
-            <element signature="e#2096#2097#0" expanded="false" />
-            <element signature="e#2124#2125#0" expanded="false" />
-            <element signature="e#2151#2152#0" expanded="false" />
-            <element signature="e#2198#2199#0" expanded="false" />
-            <element signature="e#2242#2243#0" expanded="false" />
-            <element signature="e#2292#2293#0" expanded="false" />
-            <element signature="e#2333#2334#0" expanded="false" />
-            <element signature="e#2366#2367#0" expanded="false" />
-            <element signature="e#2398#2399#0" expanded="false" />
-            <element signature="e#2445#2446#0" expanded="false" />
-            <element signature="e#2487#2488#0" expanded="false" />
-            <element signature="e#2526#2527#0" expanded="false" />
-            <element signature="e#2570#2571#0" expanded="false" />
-            <element signature="e#2603#2604#0" expanded="false" />
-            <element signature="e#2632#2633#0" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2712#2713#0" expanded="false" />
-            <element signature="e#2744#2745#0" expanded="false" />
-            <element signature="e#2772#2773#0" expanded="false" />
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2849#2850#0" expanded="false" />
-            <element signature="e#3303#3304#0" expanded="false" />
-            <element signature="e#3335#3336#0" expanded="false" />
-            <element signature="e#3386#3387#0" expanded="false" />
-            <element signature="e#3421#3422#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3495#3496#0" expanded="false" />
-            <element signature="e#3551#3552#0" expanded="false" />
-            <element signature="e#3599#3600#0" expanded="false" />
-            <element signature="e#5305#5306#0" expanded="false" />
-            <element signature="e#5345#5346#0" expanded="false" />
-            <element signature="e#5401#5402#0" expanded="false" />
-            <element signature="e#5443#5444#0" expanded="false" />
-            <element signature="e#5480#5481#0" expanded="false" />
-            <element signature="e#5513#5514#0" expanded="false" />
-            <element signature="e#5565#5566#0" expanded="false" />
-            <element signature="e#5609#5610#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#1882#1883#0" expanded="false" />
+            <element signature="e#1930#1931#0" expanded="false" />
+            <element signature="e#1970#1971#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2032#2033#0" expanded="false" />
+            <element signature="e#2076#2077#0" expanded="false" />
+            <element signature="e#2112#2113#0" expanded="false" />
+            <element signature="e#2140#2141#0" expanded="false" />
+            <element signature="e#2167#2168#0" expanded="false" />
+            <element signature="e#2214#2215#0" expanded="false" />
+            <element signature="e#2258#2259#0" expanded="false" />
+            <element signature="e#2308#2309#0" expanded="false" />
+            <element signature="e#2349#2350#0" expanded="false" />
+            <element signature="e#2382#2383#0" expanded="false" />
+            <element signature="e#2414#2415#0" expanded="false" />
+            <element signature="e#2461#2462#0" expanded="false" />
+            <element signature="e#2503#2504#0" expanded="false" />
+            <element signature="e#2542#2543#0" expanded="false" />
+            <element signature="e#2586#2587#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
+            <element signature="e#2648#2649#0" expanded="false" />
+            <element signature="e#2692#2693#0" expanded="false" />
+            <element signature="e#2728#2729#0" expanded="false" />
+            <element signature="e#2760#2761#0" expanded="false" />
+            <element signature="e#2788#2789#0" expanded="false" />
+            <element signature="e#2831#2832#0" expanded="false" />
+            <element signature="e#2865#2866#0" expanded="false" />
+            <element signature="e#3319#3320#0" expanded="false" />
+            <element signature="e#3351#3352#0" expanded="false" />
+            <element signature="e#3402#3403#0" expanded="false" />
+            <element signature="e#3437#3438#0" expanded="false" />
+            <element signature="e#3476#3477#0" expanded="false" />
+            <element signature="e#3511#3512#0" expanded="false" />
+            <element signature="e#3567#3568#0" expanded="false" />
+            <element signature="e#3615#3616#0" expanded="false" />
+            <element signature="e#5321#5322#0" expanded="false" />
+            <element signature="e#5361#5362#0" expanded="false" />
+            <element signature="e#5417#5418#0" expanded="false" />
+            <element signature="e#5459#5460#0" expanded="false" />
+            <element signature="e#5496#5497#0" expanded="false" />
+            <element signature="e#5529#5530#0" expanded="false" />
+            <element signature="e#5581#5582#0" expanded="false" />
+            <element signature="e#5625#5626#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -1438,7 +1547,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/util/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
@@ -1462,7 +1571,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParseAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
@@ -1575,107 +1684,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Molecule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Molecule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="181" column="35" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#590#591#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1866#1867#0" expanded="false" />
-            <element signature="e#1914#1915#0" expanded="false" />
-            <element signature="e#1954#1955#0" expanded="false" />
-            <element signature="e#1987#1988#0" expanded="false" />
-            <element signature="e#2016#2017#0" expanded="false" />
-            <element signature="e#2060#2061#0" expanded="false" />
-            <element signature="e#2096#2097#0" expanded="false" />
-            <element signature="e#2124#2125#0" expanded="false" />
-            <element signature="e#2151#2152#0" expanded="false" />
-            <element signature="e#2198#2199#0" expanded="false" />
-            <element signature="e#2242#2243#0" expanded="false" />
-            <element signature="e#2292#2293#0" expanded="false" />
-            <element signature="e#2333#2334#0" expanded="false" />
-            <element signature="e#2366#2367#0" expanded="false" />
-            <element signature="e#2398#2399#0" expanded="false" />
-            <element signature="e#2445#2446#0" expanded="false" />
-            <element signature="e#2487#2488#0" expanded="false" />
-            <element signature="e#2526#2527#0" expanded="false" />
-            <element signature="e#2570#2571#0" expanded="false" />
-            <element signature="e#2603#2604#0" expanded="false" />
-            <element signature="e#2632#2633#0" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2712#2713#0" expanded="false" />
-            <element signature="e#2744#2745#0" expanded="false" />
-            <element signature="e#2772#2773#0" expanded="false" />
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2849#2850#0" expanded="false" />
-            <element signature="e#3303#3304#0" expanded="false" />
-            <element signature="e#3335#3336#0" expanded="false" />
-            <element signature="e#3386#3387#0" expanded="false" />
-            <element signature="e#3421#3422#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3495#3496#0" expanded="false" />
-            <element signature="e#3551#3552#0" expanded="false" />
-            <element signature="e#3599#3600#0" expanded="false" />
-            <element signature="e#5305#5306#0" expanded="false" />
-            <element signature="e#5345#5346#0" expanded="false" />
-            <element signature="e#5401#5402#0" expanded="false" />
-            <element signature="e#5443#5444#0" expanded="false" />
-            <element signature="e#5480#5481#0" expanded="false" />
-            <element signature="e#5513#5514#0" expanded="false" />
-            <element signature="e#5565#5566#0" expanded="false" />
-            <element signature="e#5609#5610#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#1882#1883#0" expanded="false" />
+            <element signature="e#1930#1931#0" expanded="false" />
+            <element signature="e#1970#1971#0" expanded="false" />
+            <element signature="e#2003#2004#0" expanded="false" />
+            <element signature="e#2032#2033#0" expanded="false" />
+            <element signature="e#2076#2077#0" expanded="false" />
+            <element signature="e#2112#2113#0" expanded="false" />
+            <element signature="e#2140#2141#0" expanded="false" />
+            <element signature="e#2167#2168#0" expanded="false" />
+            <element signature="e#2214#2215#0" expanded="false" />
+            <element signature="e#2258#2259#0" expanded="false" />
+            <element signature="e#2308#2309#0" expanded="false" />
+            <element signature="e#2349#2350#0" expanded="false" />
+            <element signature="e#2382#2383#0" expanded="false" />
+            <element signature="e#2414#2415#0" expanded="false" />
+            <element signature="e#2461#2462#0" expanded="false" />
+            <element signature="e#2503#2504#0" expanded="false" />
+            <element signature="e#2542#2543#0" expanded="false" />
+            <element signature="e#2586#2587#0" expanded="false" />
+            <element signature="e#2619#2620#0" expanded="false" />
+            <element signature="e#2648#2649#0" expanded="false" />
+            <element signature="e#2692#2693#0" expanded="false" />
+            <element signature="e#2728#2729#0" expanded="false" />
+            <element signature="e#2760#2761#0" expanded="false" />
+            <element signature="e#2788#2789#0" expanded="false" />
+            <element signature="e#2831#2832#0" expanded="false" />
+            <element signature="e#2865#2866#0" expanded="false" />
+            <element signature="e#3319#3320#0" expanded="false" />
+            <element signature="e#3351#3352#0" expanded="false" />
+            <element signature="e#3402#3403#0" expanded="false" />
+            <element signature="e#3437#3438#0" expanded="false" />
+            <element signature="e#3476#3477#0" expanded="false" />
+            <element signature="e#3511#3512#0" expanded="false" />
+            <element signature="e#3567#3568#0" expanded="false" />
+            <element signature="e#3615#3616#0" expanded="false" />
+            <element signature="e#5321#5322#0" expanded="false" />
+            <element signature="e#5361#5362#0" expanded="false" />
+            <element signature="e#5417#5418#0" expanded="false" />
+            <element signature="e#5459#5460#0" expanded="false" />
+            <element signature="e#5496#5497#0" expanded="false" />
+            <element signature="e#5529#5530#0" expanded="false" />
+            <element signature="e#5581#5582#0" expanded="false" />
+            <element signature="e#5625#5626#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/util/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/excelapi/ExcelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#468#469#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#530#531#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#599#600#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#762#763#0" expanded="false" />
+            <element signature="e#798#799#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1688,29 +1779,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/JsonCollection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/model/JsonCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#200#201#0" expanded="false" />
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParseFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ParseAlgo.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321033">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/excelapi/ExcelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fedosov/ParseFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39728352">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -150,11 +150,11 @@ CodeCache: size=245760Kb used=1216Kb max_used=1216Kb free=244543Kb
  compilation: enabled
 
 Compilation events (10 events):
-Event: 2012,856 Thread 0x00007fbfd4239800   75       3       java.util.zip.ZipFile::ensureOpen (37 bytes)
+Event: 2012,856 Thread 0x00007fbfd4239800   75       3       java.fedosov.util.zip.ZipFile::ensureOpen (37 bytes)
 Event: 2012,856 Thread 0x00007fbfd4239800 nmethod 75 0x00007fbfc42e5810 code [0x00007fbfc42e59c0, 0x00007fbfc42e5cb8]
-Event: 2012,856 Thread 0x00007fbfd4239800   76       3       java.util.zip.ZipCoder::getBytes (192 bytes)
+Event: 2012,856 Thread 0x00007fbfd4239800   76       3       java.fedosov.util.zip.ZipCoder::getBytes (192 bytes)
 Event: 2012,858 Thread 0x00007fbfd4239800 nmethod 76 0x00007fbfc42e5e10 code [0x00007fbfc42e61e0, 0x00007fbfc42e84b8]
-Event: 2012,858 Thread 0x00007fbfd4239800   77       3       java.util.zip.ZipCoder::encoder (35 bytes)
+Event: 2012,858 Thread 0x00007fbfd4239800   77       3       java.fedosov.util.zip.ZipCoder::encoder (35 bytes)
 Event: 2012,858 Thread 0x00007fbfd4239800 nmethod 77 0x00007fbfc42e9890 code [0x00007fbfc42e9a40, 0x00007fbfc42ea0c8]
 Event: 2012,858 Thread 0x00007fbfd4239800   78       3       java.nio.charset.CharsetEncoder::reset (11 bytes)
 Event: 2012,858 Thread 0x00007fbfd4239800 nmethod 78 0x00007fbfc42ea290 code [0x00007fbfc42ea400, 0x00007fbfc42ea630]
@@ -379,7 +379,7 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 
 VM Arguments:
 jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:43257,suspend=y,server=n -javaagent:/home/fedosovmax/Desktop/idea-IU-141.1532.4/plugins/Groovy/lib/agent/gragent.jar -Dfile.encoding=UTF-8 
-java_command: ParseFile
+java_command: fedosov.ParseFile
 java_class_path (initial): /home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/jfxswt.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/rt.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/javaws.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/jce.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/deploy.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/jfr.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/charsets.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/plugin.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/jsse.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/management-agent.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/resources.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/sunjce_provider.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/jaccess.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/jfxrt.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/localedata.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/sunpkcs11.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/dnsns.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/zipfs.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/nashorn.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/sunec.jar:/home/fedosovmax/Desktop/jdk1.8.0_60/jre/lib/ext/cldrdata.jar:/home/fedosovmax/Documents/DiplomFM/build/classes/main:/home/fedosovmax/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar:/home/fedosovmax/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.12/8be19a6a1fa08e934a497929f360111a4d2e5115/poi-3.12.jar:/home/fedosovmax/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar:/home/fedosovmax/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.4.1/b02e84a993d88568417536240e970c4b809126fd/commons-compress-1.4.1.jar:/home/fedosovmax/Desktop/idea-IU-141.1532.4/lib/idea_rt.jar:/home/fedosovmax/Desktop/idea-IU-141.1532.
 Launcher Type: SUN_STANDARD
 
@@ -465,14 +465,14 @@ DirectMap2M:     8110080 kB
 DirectMap1G:     5242880 kB
 
 
-CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, tsc, tscinvbit, bmi1, bmi2
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 fedosov.model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, tsc, tscinvbit, bmi1, bmi2
 
 /proc/cpuinfo:
 processor	: 0
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 60
-model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+fedosov.model		: 60
+fedosov.model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
 stepping	: 3
 microcode	: 0x9
 cpu MHz		: 3220.375
@@ -498,8 +498,8 @@ power management:
 processor	: 1
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 60
-model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+fedosov.model		: 60
+fedosov.model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
 stepping	: 3
 microcode	: 0x9
 cpu MHz		: 3204.750
@@ -525,8 +525,8 @@ power management:
 processor	: 2
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 60
-model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+fedosov.model		: 60
+fedosov.model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
 stepping	: 3
 microcode	: 0x9
 cpu MHz		: 3223.375
@@ -552,8 +552,8 @@ power management:
 processor	: 3
 vendor_id	: GenuineIntel
 cpu family	: 6
-model		: 60
-model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+fedosov.model		: 60
+fedosov.model name	: Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
 stepping	: 3
 microcode	: 0x9
 cpu MHz		: 3205.750
